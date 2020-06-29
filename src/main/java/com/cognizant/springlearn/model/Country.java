@@ -18,12 +18,12 @@ public class Country {
 	}
 	
 	
-	
+	/*
 	public Country(String name, String code) {
 		super();
 		this.name = name;
 		this.code = code;
-	}
+	}*/
 
 
 

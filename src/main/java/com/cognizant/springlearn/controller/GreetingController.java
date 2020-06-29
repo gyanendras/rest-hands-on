@@ -44,14 +44,14 @@ public class GreetingController {
 		return list;
 	}
 	
-	@PostMapping(value="/countries")
+	@PostMapping(value="/countries",consumes = "application/json")
 	public Country addCountry(@RequestBody Country country) {
 		LOGGER.info("Start");
 		return country;
 	}
 	
 	
-	@GetMapping("/countries/{code}")
+	@PostMapping("/countries/{code}")
 	public Country getCountriesByCode(@PathVariable String code) throws CountryNotFoundException {
 		ApplicationContext context = new ClassPathXmlApplicationContext("country.xml");
 		List<Country> list = new ArrayList<>();
