@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import com.cognizant.springlearn.SpringLearnApplication;
 
+
 public class Country {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(SpringLearnApplication.class);

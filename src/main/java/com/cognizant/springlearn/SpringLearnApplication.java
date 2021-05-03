@@ -15,13 +15,18 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.cognizant.springlearn.model.Country;
 
-@EnableDiscoveryClient 
+import lombok.extern.java.Log;
+import lombok.extern.slf4j.Slf4j;
+
+
 @SpringBootApplication
+@Slf4j
 public class SpringLearnApplication {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(SpringLearnApplication.class);
 	
 	public static void main(String[] args) {
+		log.info("An INFO Message");
 		LOGGER.info("Inside main()");
 		SpringApplication.run(SpringLearnApplication.class, args);
 		//displayDate();
